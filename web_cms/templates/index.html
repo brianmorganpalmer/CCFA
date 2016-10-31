@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load i18n staticfiles %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Microbiome Informatics Center" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Microbiome Bioinformatics Center" %}</li>
+{% endblock %}
+
+{% block left_panel %}{% endblock  %}
+
+{% block main %}
+<p>
+  This site is funded by the <a href="http://www.ccfa.org">Crohn's and
+  Colitis Foundation of America</a> and is specifically used by
+  researchers for the collection and analysis of microbiome data. If
+  you are interested in learning more about the foundation and it's
+  research, please visit <a href="http://www.ccfa.org">
+  www.ccfa.org</a>
+</p>
+
+<img src="{% static "img/new-main-banner.jpg"  %}" />
+{% endblock %}

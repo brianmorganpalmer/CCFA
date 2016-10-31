@@ -1,0 +1,8 @@
+# this directory 'ccfa' mimics the /var/www/ccfa directory on ccfa01,02.
+#
+# files under ccfa/python are invoked via a wrapper script which is
+# located under ccfa/scripts
+#
+# ccfa/python/venv contains a python environment that should be sourced
+# prior to being run (this happens in the wrapper script listed above)
+

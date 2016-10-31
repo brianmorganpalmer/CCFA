@@ -1,0 +1,67 @@
+{% extends "cloud_browser/admin/base.html" %}
+
+{% comment %}
+###############################################################################
+# Browser
+#
+# Admin version (for integration in Django admin area).
+###############################################################################
+{% endcomment %}
+
+{% load adminmedia %}
+{% load cloud_browser_extras %}
+
+{% block title %}
+{% endblock %}
+
+{% block cloud_browser_breadcrumbs %}
+    {% include "cloud_browser/_breadcrumbs.html" %}
+{% endblock %}
+
+{% block cloud_browser_template_head %}
+{# Use jQuery from Admin #}
+<script type="text/javascript" 
+        src="{% admin_media_prefix %}js/jquery.js"></script>
+<script type="text/javascript" 
+        src="{% admin_media_prefix %}js/jquery.init.js"></script>
+
+<link rel="stylesheet" type="text/css"
+    href="{% cloud_browser_media_url 'css/cloud-browser.css' %}" />
+<link rel="stylesheet" type="text/css"
+    href="{% cloud_browser_media_url 'css/cloud-browser-admin.css' %}" />
+<script type="text/javascript"
+    src="{% cloud_browser_media_url 'js/browser.js' %}"></script>
+<script type="text/javascript"
+    src="{% cloud_browser_media_url 'js/browser-admin.js' %}"></script>
+
+<script type="text/javascript">
+(function ($) {
+    $(document).ready(function ($) {
+        // Browser Elements.
+        var $all = $('#cloud-browser-all');
+        var $conts = $('#cloud-browser-containers');
+        var $objs = $('#cloud-browser-objects');
+
+        // All relevant links.
+        var $allLinks = $('.cloud-browser-document-link, ' +
+                          '.cloud-browser-breadcrumb-link');
+        var $allForms = $('.cloud-browser-form');
+
+        // Link state function.
+        var setClosedState = function (isClosed) {
+            CloudBrowserAdmin.setLinkState($allLinks, $allForms, isClosed);
+        };
+
+        // Setup initial link state.
+        setClosedState(null);
+
+        // Add hider and toggle callback.
+        CloudBrowserAdmin.addHider($all, $conts, $objs, null, setClosedState);
+    });
+})(django.jQuery);
+</script>
+{% endblock %}
+
+{% block cloud_browser_content %}
+    {% include "cloud_browser/_browser.html" %}
+{% endblock %}

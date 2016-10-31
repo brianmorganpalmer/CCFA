@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load i18n staticfiles %}
+
+{% block meta_title %}{% trans "metadata.txt" %}{% endblock %}
+{% block site_meta_title %}{% endblock site_meta_title %}
+{% block title %}{% trans "Automagic metadata generator" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Metadata Generator" %}</li>
+{% endblock %}
+
+{% block extra_css %}
+<link href="{% static "css/mibc.css" %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static "assets/jquery-validation/jquery.validate.js" %}">
+</script>
+{% endblock %}
+
+{% block left_panel %}{% endblock  %}
+
+{% block main_outer %}
+
+<div class="col-md-9 middle">
+{% block main %}
+
+<p>Fill out this form to get your metadata.txt file</p>
+
+    <form>
+      <div class="col-md10">
+	<div id="message_box" class="span8 well well-large hidden">
+	  <input type="checkbox" id="save_override" class="hidden"> 
+	  Save anyway?
+	  <hr />
+	</div>
+	<div id="metadata" >
+	  <div class="row">
+	    <input required="required" name="pi_first_name" type="text" placeholder="PI First Name">
+	    <input required="required" type="text" placeholder="PI Last Name" name="pi_last_name">
+	    <input required="required" type="email" placeholder="PI Email" name="pi_contact_email">
+	    <input required="required" type="text" placeholder="Lab Name" name="lab_name">
+	    <a href="#"><i class="rowadd glyphicon glyphicon-plus-sign"></i></a>
+	  </div>
+	  <div class="row">
+	    <input required="required" type="text" placeholder="Researcher First Name" name="researcher_first_name">
+	    <input required="required" type="text" placeholder="Researcher Last Name" name="researcher_last_name">
+	    <input required="required" type="email" placeholder="Researcher Email" name="researcher_contact_email">
+	    <a href="#"><i class="rowadd glyphicon glyphicon-plus-sign"></i></a>
+	  </div>
+	  <div class="row">
+	    <input required="required" type="text" placeholder="Study Title" name="study_title">
+	    <input required="required" type="text" placeholder="Study Description" name="study_description">
+	    <select name="sample_type" required="required"> 
+	      <option value="" selected> Sample Type </option>
+	      <option value="human_gut">Human, Gut </option> 
+	      <option value="human_oral">Human, Oral </option>
+	      <option value="human_associated">Human, Other</option>
+	      <option value="microbial">Microbial</option>
+	    </select>
+	  </div>
+	  <div class="row">
+	    <input required="required" type="text" placeholder="Filename" name="filename">
+	    <a href="#"><i class="rowadd glyphicon glyphicon-plus-sign"></i></a>
+	  </div>
+	  <div class="row">
+	    <label for="collection_start_date" >Collection Start Date</label>
+	    <input required="required" type="date" name="collection_start_date">
+	    <label for="collection_end_date" >Collection End Date</label>
+	    <input required="required" type="date" name="collection_end_date">
+	  </div>
+	  <div class="row">
+	    <input required="required" type="checkbox" placeholder="submit_to_sra" name="submit_to_sra"> Submit to SRA?
+	  </div>
+	  <div class="row hidden" id="submit_to_sra">
+	    <input type="text" placeholder="Geolocation Name" name="geo_loc_name">
+	    <input type="text" placeholder="Lat/Lon Coordinates" name="lat_lon">
+	  </div>
+	  <div class="row">
+	    <input required="required" type="checkbox" placeholder="16s_data" name="16s_data"> 16s_data?
+	  </div>
+	  <div class="row hidden" id="16s_data">
+	    <input type="text" placeholder="Reverse Primer" name="reverse_primer">
+	    <input type="text" placeholder="Platform" name="platform">
+	  </div>
+	</div>
+	<div class="row">
+	  <a id="save_btn" class="btn btn-primary" href="#"
+	     style="color: #ffffff">Save</a>
+	  <a id="load_btn" class="btn btn-primary" href="#"
+	     style="color: #ffffff">Load</a>
+	  <span id="load_form" style="display: none"> 
+	    <input id="load_usr" placeholder="User Name"> 
+	    <input id="load_proj" placeholder="Project Name">
+	    <div id="loading" class="glyphicon glyphicon-time hidden"></div>
+	    <span class="label label-danger hidden"></span>
+	  </span>
+	</div>
+	<br />
+	<br />
+	<br />
+      </div>
+    </form>
+    <script src="{% static "js/metadata.js" %} "></script>
+
+{% endblock %}
+
+</div>
+{% endblock main_outer %}

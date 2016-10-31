@@ -1,0 +1,14 @@
+{% comment %}
+###############################################################################
+# Path breadcrumbs
+###############################################################################
+{% endcomment %}
+
+{% block cloud_browser_breadcrumbs %}
+  ( <a class="cloud-browser-breadcrumb-link"
+       href="{% url 'cloud_browser_browser' 'home' %}">Home</a> )
+  {% for crumb_path, crumb in breadcrumbs %}
+    &raquo; <a class="cloud-browser-breadcrumb-link"
+     href="{% url 'cloud_browser_browser' crumb_path %}">{{ crumb }}</a>
+  {% endfor %}
+{% endblock %}

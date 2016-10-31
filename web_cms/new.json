@@ -1,0 +1,1594 @@
+[
+    {
+        "fields": {
+            "app_label": "auth",
+            "model": "permission",
+            "name": "permission"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "app_label": "auth",
+            "model": "group",
+            "name": "group"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "app_label": "auth",
+            "model": "user",
+            "name": "user"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype",
+            "name": "content type"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "app_label": "redirects",
+            "model": "redirect",
+            "name": "redirect"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "app_label": "sessions",
+            "model": "session",
+            "name": "session"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "app_label": "sites",
+            "model": "site",
+            "name": "site"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "app_label": "conf",
+            "model": "setting",
+            "name": "Setting"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "app_label": "core",
+            "model": "sitepermission",
+            "name": "Site permission"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "app_label": "generic",
+            "model": "threadedcomment",
+            "name": "Comment"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "app_label": "generic",
+            "model": "keyword",
+            "name": "Keyword"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "app_label": "generic",
+            "model": "assignedkeyword",
+            "name": "assigned keyword"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "app_label": "generic",
+            "model": "rating",
+            "name": "Rating"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "app_label": "forms",
+            "model": "form",
+            "name": "Form"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "app_label": "forms",
+            "model": "field",
+            "name": "Field"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "app_label": "forms",
+            "model": "formentry",
+            "name": "Form entry"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "app_label": "forms",
+            "model": "fieldentry",
+            "name": "Form field entry"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "app_label": "pages",
+            "model": "page",
+            "name": "Page"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "app_label": "pages",
+            "model": "richtextpage",
+            "name": "Rich text page"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "app_label": "pages",
+            "model": "link",
+            "name": "Link"
+        },
+        "model": "contenttypes.contenttype",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "expire_date": "2014-06-12T08:20:15Z",
+            "session_data": "OTE4YmI1ZWVlYmNkNzMwYTliYWRlNDRlNGY3NzdkYzU5OGFkYjdlNTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6Im1lenphbmluZS5jb3JlLmF1dGhfYmFja2VuZHMuTWV6emFuaW5lQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjF9"
+        },
+        "model": "sessions.session",
+        "pk": "g005mnw9rsgnoc3pznzl9o6g8wd25hje"
+    },
+    {
+        "fields": {
+            "expire_date": "2014-06-13T19:13:34Z",
+            "session_data": "ZjVmZDYxMzU5MDU2YjQzN2VkNmI2OWMxMTg3NDQ4MTE3MDI1YzNkYzp7fQ=="
+        },
+        "model": "sessions.session",
+        "pk": "uhh31097meqcghrodyn2coptu36uoaqi"
+    },
+    {
+        "fields": {
+            "domain": "127.0.0.1:8000",
+            "name": "Default"
+        },
+        "model": "sites.site",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "GOOGLE_ANALYTICS_ID",
+            "site": 1,
+            "value": ""
+        },
+        "model": "conf.setting",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "ADMIN_MENU_COLLAPSED",
+            "site": 1,
+            "value": "False"
+        },
+        "model": "conf.setting",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "SEARCH_PER_PAGE",
+            "site": 1,
+            "value": "10"
+        },
+        "model": "conf.setting",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "COMMENTS_NUM_LATEST",
+            "site": 1,
+            "value": "5"
+        },
+        "model": "conf.setting",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "ACCOUNTS_APPROVAL_EMAILS",
+            "site": 1,
+            "value": "schwager@hsph.harvard.edu,kbayer@hsph.harvard.edu"
+        },
+        "model": "conf.setting",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "name": "RICHTEXT_FILTER_LEVEL",
+            "site": 1,
+            "value": "1"
+        },
+        "model": "conf.setting",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name": "COMMENTS_UNAPPROVED_VISIBLE",
+            "site": 1,
+            "value": "True"
+        },
+        "model": "conf.setting",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "name": "SITE_TAGLINE",
+            "site": 1,
+            "value": "Your friendly microbiome research support center"
+        },
+        "model": "conf.setting",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "name": "COMMENTS_REMOVED_VISIBLE",
+            "site": 1,
+            "value": "True"
+        },
+        "model": "conf.setting",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "name": "BITLY_ACCESS_TOKEN",
+            "site": 1,
+            "value": ""
+        },
+        "model": "conf.setting",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "name": "SSL_ENABLED",
+            "site": 1,
+            "value": "False"
+        },
+        "model": "conf.setting",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "name": "AKISMET_API_KEY",
+            "site": 1,
+            "value": ""
+        },
+        "model": "conf.setting",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "name": "COMMENTS_DEFAULT_APPROVED",
+            "site": 1,
+            "value": "False"
+        },
+        "model": "conf.setting",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "name": "COMMENTS_NOTIFICATION_EMAILS",
+            "site": 1,
+            "value": ""
+        },
+        "model": "conf.setting",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "name": "COMMENTS_DISQUS_API_PUBLIC_KEY",
+            "site": 1,
+            "value": ""
+        },
+        "model": "conf.setting",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "name": "COMMENTS_DISQUS_API_SECRET_KEY",
+            "site": 1,
+            "value": ""
+        },
+        "model": "conf.setting",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "name": "COMMENTS_ACCOUNT_REQUIRED",
+            "site": 1,
+            "value": "True"
+        },
+        "model": "conf.setting",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "name": "MAX_PAGING_LINKS",
+            "site": 1,
+            "value": "10"
+        },
+        "model": "conf.setting",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "name": "TAG_CLOUD_SIZES",
+            "site": 1,
+            "value": "4"
+        },
+        "model": "conf.setting",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "name": "COMMENTS_DISQUS_SHORTNAME",
+            "site": 1,
+            "value": ""
+        },
+        "model": "conf.setting",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "name": "SSL_FORCE_HOST",
+            "site": 1,
+            "value": ""
+        },
+        "model": "conf.setting",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "name": "RATINGS_ACCOUNT_REQUIRED",
+            "site": 1,
+            "value": "False"
+        },
+        "model": "conf.setting",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "_meta_title": "",
+            "_order": 0,
+            "content_model": "richtextpage",
+            "created": "2014-05-24T21:28:12Z",
+            "description": "Metadata Generator",
+            "expiry_date": null,
+            "gen_description": true,
+            "in_menus": "1,2,3",
+            "in_sitemap": true,
+            "keywords_string": "",
+            "login_required": false,
+            "parent": null,
+            "publish_date": "2014-05-24T21:28:11Z",
+            "short_url": null,
+            "site": 1,
+            "slug": "tools",
+            "status": 2,
+            "title": "Tools",
+            "titles": "Tools",
+            "updated": "2014-05-30T13:02:27Z"
+        },
+        "model": "pages.page",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "_meta_title": null,
+            "_order": 0,
+            "content_model": "link",
+            "created": "2014-05-24T21:29:49Z",
+            "description": "Tools / Metadata Generator",
+            "expiry_date": null,
+            "gen_description": true,
+            "in_menus": "1,2,3",
+            "in_sitemap": false,
+            "keywords_string": "",
+            "login_required": false,
+            "parent": 1,
+            "publish_date": "2014-05-24T21:29:49Z",
+            "short_url": null,
+            "site": 1,
+            "slug": "/metadata",
+            "status": 2,
+            "title": "Metadata Generator",
+            "titles": "Tools / Metadata Generator",
+            "updated": "2014-05-24T21:29:49Z"
+        },
+        "model": "pages.page",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "_meta_title": null,
+            "_order": 1,
+            "content_model": "link",
+            "created": "2014-05-24T21:30:23Z",
+            "description": "Tools / Sample-level Metadata Editor",
+            "expiry_date": null,
+            "gen_description": true,
+            "in_menus": "1,2,3",
+            "in_sitemap": false,
+            "keywords_string": "",
+            "login_required": false,
+            "parent": 1,
+            "publish_date": "2014-05-24T21:30:23Z",
+            "short_url": null,
+            "site": 1,
+            "slug": "/samplemeta",
+            "status": 2,
+            "title": "Sample-level Metadata Editor",
+            "titles": "Tools / Sample-level Metadata Editor",
+            "updated": "2014-05-24T21:30:23Z"
+        },
+        "model": "pages.page",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "_meta_title": null,
+            "_order": 2,
+            "content_model": "link",
+            "created": "2014-05-24T21:30:42Z",
+            "description": "Tools / Metatadata Validator",
+            "expiry_date": null,
+            "gen_description": true,
+            "in_menus": "1,2,3",
+            "in_sitemap": false,
+            "keywords_string": "",
+            "login_required": false,
+            "parent": 1,
+            "publish_date": "2014-05-24T21:30:42Z",
+            "short_url": null,
+            "site": 1,
+            "slug": "/validator",
+            "status": 2,
+            "title": "Metatadata Validator",
+            "titles": "Tools / Metatadata Validator",
+            "updated": "2014-05-24T21:30:42Z"
+        },
+        "model": "pages.page",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "_meta_title": null,
+            "_order": 3,
+            "content_model": "link",
+            "created": "2014-05-28T17:33:23Z",
+            "description": "Tools / Files",
+            "expiry_date": null,
+            "gen_description": true,
+            "in_menus": "1,2,3",
+            "in_sitemap": false,
+            "keywords_string": "",
+            "login_required": false,
+            "parent": 1,
+            "publish_date": "2014-05-28T17:33:23Z",
+            "short_url": null,
+            "site": 1,
+            "slug": "/files",
+            "status": 2,
+            "title": "Files",
+            "titles": "Tools / Files",
+            "updated": "2014-05-28T17:33:23Z"
+        },
+        "model": "pages.page",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "_meta_title": null,
+            "_order": 1,
+            "content_model": "link",
+            "created": "2014-05-30T13:03:02Z",
+            "description": "Support Tickets",
+            "expiry_date": null,
+            "gen_description": true,
+            "in_menus": "1,2,3",
+            "in_sitemap": false,
+            "keywords_string": "",
+            "login_required": false,
+            "parent": null,
+            "publish_date": "2014-05-30T13:03:02Z",
+            "short_url": null,
+            "site": 1,
+            "slug": "/tickets",
+            "status": 2,
+            "title": "Support Tickets",
+            "titles": "Support Tickets",
+            "updated": "2014-05-30T13:03:02Z"
+        },
+        "model": "pages.page",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "_meta_title": "",
+            "_order": 2,
+            "content_model": "richtextpage",
+            "created": "2014-05-30T14:48:54Z",
+            "description": "\n\n\n\u00a0Data Upload.pdf\nProcedures for uploading content to the Bioinformatics Center site. This includes methods for using the Web UI and for Secure FTP.\u00a0 Italso covers the types of files that are required for processing (either manual or automated).\n\n\n\n",
+            "expiry_date": null,
+            "gen_description": true,
+            "in_menus": "1,2,3",
+            "in_sitemap": true,
+            "keywords_string": "",
+            "login_required": false,
+            "parent": null,
+            "publish_date": "2014-05-30T14:48:54Z",
+            "short_url": null,
+            "site": 1,
+            "slug": "documents",
+            "status": 2,
+            "title": "Documents",
+            "titles": "Documents",
+            "updated": "2014-05-30T14:48:54Z"
+        },
+        "model": "pages.page",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "content": "<table cellpadding=\"1\" border=\"1\" cellspacing=\"1\">\n<tbody>\n<tr>\n<td width=\"30%\"><a href=\"/static/media/uploads/DataUploadSOP.pdf\"><img src=\"https://ccfa.rc.fas.harvard.edu/misc/pdf-icon.png\">\u00a0Data Upload.pdf</a></td>\n<td width=\"70%\">Procedures for uploading content to the Bioinformatics Center site. This includes methods for using the Web UI and for Secure FTP.\u00a0 It<br>also covers the types of files that are required for processing (either manual or automated).</td>\n</tr>\n</tbody>\n</table>\n<p></p>\n<p></p>\n<table cellpadding=\"1\" border=\"1\" cellspacing=\"1\">\n<tbody>\n<tr>\n<td><a href=\"/static/media/uploads/Metadata.pdf\"><img src=\"https://ccfa.rc.fas.harvard.edu/misc/pdf-icon.png\">Metadata.pdf</a></td>\n<td>Procedures for creation of a study-wide metadata.txt file. This file describes all of the files uploaded to the Bioinformatics Site and helps with manual and automated processing of the data. It identifies a Metadata generation form that can be used to help with this process.</td>\n</tr>\n</tbody>\n</table>\n<p></p>\n<p></p>\n<table cellpadding=\"1\" border=\"1\" cellspacing=\"1\">\n<tbody>\n<tr>\n<td><a href=\"/static/media/uploads/Map_txt.pdf\"><img src=\"https://ccfa.rc.fas.harvard.edu/misc/pdf-icon.png\">Map.txt.pdf</a></td>\n<td>Procedures for creation of a per-sample map.txt file.\u00a0 This file describes the sample data uploaded to the Bioinformatics Site and helps with manual and automated processing of the data. Specifically, it describes the required fields and specifies the formats needed to help with this process.</td>\n</tr>\n</tbody>\n</table>"
+        },
+        "model": "pages.richtextpage",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "content": "<p><a href=\"/metadata\">Metadata Generator</a></p>\n<p><a href=\"/samplemeta\">Sample-level Metadata Editor</a></p>\n<p><a href=\"/validator\">Metadata Validator</a></p>\n<p><a href=\"/files\">Browse Files</a></p>"
+        },
+        "model": "pages.richtextpage",
+        "pk": 1
+    },
+    {
+        "fields": {},
+        "model": "pages.link",
+        "pk": 7
+    },
+    {
+        "fields": {},
+        "model": "pages.link",
+        "pk": 6
+    },
+    {
+        "fields": {},
+        "model": "pages.link",
+        "pk": 2
+    },
+    {
+        "fields": {},
+        "model": "pages.link",
+        "pk": 4
+    },
+    {
+        "fields": {},
+        "model": "pages.link",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "added": "2014-05-28T17:54:37Z",
+            "lastchanged": "2014-05-28T17:54:37Z",
+            "slug": "site-improvements",
+            "title": "Site improvements"
+        },
+        "model": "knowledge.category",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "added": "2014-05-28T17:54:56Z",
+            "lastchanged": "2014-05-28T17:54:56Z",
+            "slug": "workflow-suggestions",
+            "title": "Workflow suggestions"
+        },
+        "model": "knowledge.category",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "added": "2014-05-28T17:55:02Z",
+            "lastchanged": "2014-05-28T17:55:02Z",
+            "slug": "special-analyses",
+            "title": "Special analyses"
+        },
+        "model": "knowledge.category",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "codename": "add_permission",
+            "content_type": 1,
+            "name": "Can add permission"
+        },
+        "model": "auth.permission",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "codename": "change_permission",
+            "content_type": 1,
+            "name": "Can change permission"
+        },
+        "model": "auth.permission",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "codename": "delete_permission",
+            "content_type": 1,
+            "name": "Can delete permission"
+        },
+        "model": "auth.permission",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "codename": "add_group",
+            "content_type": 2,
+            "name": "Can add group"
+        },
+        "model": "auth.permission",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "codename": "change_group",
+            "content_type": 2,
+            "name": "Can change group"
+        },
+        "model": "auth.permission",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "codename": "delete_group",
+            "content_type": 2,
+            "name": "Can delete group"
+        },
+        "model": "auth.permission",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "codename": "add_user",
+            "content_type": 3,
+            "name": "Can add user"
+        },
+        "model": "auth.permission",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "codename": "change_user",
+            "content_type": 3,
+            "name": "Can change user"
+        },
+        "model": "auth.permission",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "codename": "delete_user",
+            "content_type": 3,
+            "name": "Can delete user"
+        },
+        "model": "auth.permission",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "codename": "add_contenttype",
+            "content_type": 4,
+            "name": "Can add content type"
+        },
+        "model": "auth.permission",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "codename": "change_contenttype",
+            "content_type": 4,
+            "name": "Can change content type"
+        },
+        "model": "auth.permission",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "codename": "delete_contenttype",
+            "content_type": 4,
+            "name": "Can delete content type"
+        },
+        "model": "auth.permission",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "codename": "add_redirect",
+            "content_type": 5,
+            "name": "Can add redirect"
+        },
+        "model": "auth.permission",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "codename": "change_redirect",
+            "content_type": 5,
+            "name": "Can change redirect"
+        },
+        "model": "auth.permission",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "codename": "delete_redirect",
+            "content_type": 5,
+            "name": "Can delete redirect"
+        },
+        "model": "auth.permission",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "codename": "add_session",
+            "content_type": 6,
+            "name": "Can add session"
+        },
+        "model": "auth.permission",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "codename": "change_session",
+            "content_type": 6,
+            "name": "Can change session"
+        },
+        "model": "auth.permission",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "codename": "delete_session",
+            "content_type": 6,
+            "name": "Can delete session"
+        },
+        "model": "auth.permission",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "codename": "add_site",
+            "content_type": 7,
+            "name": "Can add site"
+        },
+        "model": "auth.permission",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "codename": "change_site",
+            "content_type": 7,
+            "name": "Can change site"
+        },
+        "model": "auth.permission",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "codename": "delete_site",
+            "content_type": 7,
+            "name": "Can delete site"
+        },
+        "model": "auth.permission",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "codename": "add_setting",
+            "content_type": 8,
+            "name": "Can add Setting"
+        },
+        "model": "auth.permission",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "codename": "change_setting",
+            "content_type": 8,
+            "name": "Can change Setting"
+        },
+        "model": "auth.permission",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "codename": "delete_setting",
+            "content_type": 8,
+            "name": "Can delete Setting"
+        },
+        "model": "auth.permission",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "codename": "add_sitepermission",
+            "content_type": 9,
+            "name": "Can add Site permission"
+        },
+        "model": "auth.permission",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "codename": "change_sitepermission",
+            "content_type": 9,
+            "name": "Can change Site permission"
+        },
+        "model": "auth.permission",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "codename": "delete_sitepermission",
+            "content_type": 9,
+            "name": "Can delete Site permission"
+        },
+        "model": "auth.permission",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "codename": "add_threadedcomment",
+            "content_type": 10,
+            "name": "Can add Comment"
+        },
+        "model": "auth.permission",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "codename": "change_threadedcomment",
+            "content_type": 10,
+            "name": "Can change Comment"
+        },
+        "model": "auth.permission",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "codename": "delete_threadedcomment",
+            "content_type": 10,
+            "name": "Can delete Comment"
+        },
+        "model": "auth.permission",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "codename": "add_keyword",
+            "content_type": 11,
+            "name": "Can add Keyword"
+        },
+        "model": "auth.permission",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "codename": "change_keyword",
+            "content_type": 11,
+            "name": "Can change Keyword"
+        },
+        "model": "auth.permission",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "codename": "delete_keyword",
+            "content_type": 11,
+            "name": "Can delete Keyword"
+        },
+        "model": "auth.permission",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "codename": "add_assignedkeyword",
+            "content_type": 12,
+            "name": "Can add assigned keyword"
+        },
+        "model": "auth.permission",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "codename": "change_assignedkeyword",
+            "content_type": 12,
+            "name": "Can change assigned keyword"
+        },
+        "model": "auth.permission",
+        "pk": 35
+    },
+    {
+        "fields": {
+            "codename": "delete_assignedkeyword",
+            "content_type": 12,
+            "name": "Can delete assigned keyword"
+        },
+        "model": "auth.permission",
+        "pk": 36
+    },
+    {
+        "fields": {
+            "codename": "add_rating",
+            "content_type": 13,
+            "name": "Can add Rating"
+        },
+        "model": "auth.permission",
+        "pk": 37
+    },
+    {
+        "fields": {
+            "codename": "change_rating",
+            "content_type": 13,
+            "name": "Can change Rating"
+        },
+        "model": "auth.permission",
+        "pk": 38
+    },
+    {
+        "fields": {
+            "codename": "delete_rating",
+            "content_type": 13,
+            "name": "Can delete Rating"
+        },
+        "model": "auth.permission",
+        "pk": 39
+    },
+    {
+        "fields": {
+            "codename": "add_form",
+            "content_type": 14,
+            "name": "Can add Form"
+        },
+        "model": "auth.permission",
+        "pk": 40
+    },
+    {
+        "fields": {
+            "codename": "change_form",
+            "content_type": 14,
+            "name": "Can change Form"
+        },
+        "model": "auth.permission",
+        "pk": 41
+    },
+    {
+        "fields": {
+            "codename": "delete_form",
+            "content_type": 14,
+            "name": "Can delete Form"
+        },
+        "model": "auth.permission",
+        "pk": 42
+    },
+    {
+        "fields": {
+            "codename": "add_field",
+            "content_type": 15,
+            "name": "Can add Field"
+        },
+        "model": "auth.permission",
+        "pk": 43
+    },
+    {
+        "fields": {
+            "codename": "change_field",
+            "content_type": 15,
+            "name": "Can change Field"
+        },
+        "model": "auth.permission",
+        "pk": 44
+    },
+    {
+        "fields": {
+            "codename": "delete_field",
+            "content_type": 15,
+            "name": "Can delete Field"
+        },
+        "model": "auth.permission",
+        "pk": 45
+    },
+    {
+        "fields": {
+            "codename": "add_formentry",
+            "content_type": 16,
+            "name": "Can add Form entry"
+        },
+        "model": "auth.permission",
+        "pk": 46
+    },
+    {
+        "fields": {
+            "codename": "change_formentry",
+            "content_type": 16,
+            "name": "Can change Form entry"
+        },
+        "model": "auth.permission",
+        "pk": 47
+    },
+    {
+        "fields": {
+            "codename": "delete_formentry",
+            "content_type": 16,
+            "name": "Can delete Form entry"
+        },
+        "model": "auth.permission",
+        "pk": 48
+    },
+    {
+        "fields": {
+            "codename": "add_fieldentry",
+            "content_type": 17,
+            "name": "Can add Form field entry"
+        },
+        "model": "auth.permission",
+        "pk": 49
+    },
+    {
+        "fields": {
+            "codename": "change_fieldentry",
+            "content_type": 17,
+            "name": "Can change Form field entry"
+        },
+        "model": "auth.permission",
+        "pk": 50
+    },
+    {
+        "fields": {
+            "codename": "delete_fieldentry",
+            "content_type": 17,
+            "name": "Can delete Form field entry"
+        },
+        "model": "auth.permission",
+        "pk": 51
+    },
+    {
+        "fields": {
+            "codename": "add_page",
+            "content_type": 18,
+            "name": "Can add Page"
+        },
+        "model": "auth.permission",
+        "pk": 52
+    },
+    {
+        "fields": {
+            "codename": "change_page",
+            "content_type": 18,
+            "name": "Can change Page"
+        },
+        "model": "auth.permission",
+        "pk": 53
+    },
+    {
+        "fields": {
+            "codename": "delete_page",
+            "content_type": 18,
+            "name": "Can delete Page"
+        },
+        "model": "auth.permission",
+        "pk": 54
+    },
+    {
+        "fields": {
+            "codename": "add_richtextpage",
+            "content_type": 19,
+            "name": "Can add Rich text page"
+        },
+        "model": "auth.permission",
+        "pk": 55
+    },
+    {
+        "fields": {
+            "codename": "change_richtextpage",
+            "content_type": 19,
+            "name": "Can change Rich text page"
+        },
+        "model": "auth.permission",
+        "pk": 56
+    },
+    {
+        "fields": {
+            "codename": "delete_richtextpage",
+            "content_type": 19,
+            "name": "Can delete Rich text page"
+        },
+        "model": "auth.permission",
+        "pk": 57
+    },
+    {
+        "fields": {
+            "codename": "add_link",
+            "content_type": 20,
+            "name": "Can add Link"
+        },
+        "model": "auth.permission",
+        "pk": 58
+    },
+    {
+        "fields": {
+            "codename": "change_link",
+            "content_type": 20,
+            "name": "Can change Link"
+        },
+        "model": "auth.permission",
+        "pk": 59
+    },
+    {
+        "fields": {
+            "codename": "delete_link",
+            "content_type": 20,
+            "name": "Can delete Link"
+        },
+        "model": "auth.permission",
+        "pk": 60
+    },
+    {
+        "fields": {
+            "codename": "add_logentry",
+            "content_type": 21,
+            "name": "Can add log entry"
+        },
+        "model": "auth.permission",
+        "pk": 61
+    },
+    {
+        "fields": {
+            "codename": "change_logentry",
+            "content_type": 21,
+            "name": "Can change log entry"
+        },
+        "model": "auth.permission",
+        "pk": 62
+    },
+    {
+        "fields": {
+            "codename": "delete_logentry",
+            "content_type": 21,
+            "name": "Can delete log entry"
+        },
+        "model": "auth.permission",
+        "pk": 63
+    },
+    {
+        "fields": {
+            "codename": "add_comment",
+            "content_type": 22,
+            "name": "Can add comment"
+        },
+        "model": "auth.permission",
+        "pk": 64
+    },
+    {
+        "fields": {
+            "codename": "change_comment",
+            "content_type": 22,
+            "name": "Can change comment"
+        },
+        "model": "auth.permission",
+        "pk": 65
+    },
+    {
+        "fields": {
+            "codename": "delete_comment",
+            "content_type": 22,
+            "name": "Can delete comment"
+        },
+        "model": "auth.permission",
+        "pk": 66
+    },
+    {
+        "fields": {
+            "codename": "can_moderate",
+            "content_type": 22,
+            "name": "Can moderate comments"
+        },
+        "model": "auth.permission",
+        "pk": 67
+    },
+    {
+        "fields": {
+            "codename": "add_commentflag",
+            "content_type": 23,
+            "name": "Can add comment flag"
+        },
+        "model": "auth.permission",
+        "pk": 68
+    },
+    {
+        "fields": {
+            "codename": "change_commentflag",
+            "content_type": 23,
+            "name": "Can change comment flag"
+        },
+        "model": "auth.permission",
+        "pk": 69
+    },
+    {
+        "fields": {
+            "codename": "delete_commentflag",
+            "content_type": 23,
+            "name": "Can delete comment flag"
+        },
+        "model": "auth.permission",
+        "pk": 70
+    },
+    {
+        "fields": {
+            "codename": "add_category",
+            "content_type": 24,
+            "name": "Can add Category"
+        },
+        "model": "auth.permission",
+        "pk": 71
+    },
+    {
+        "fields": {
+            "codename": "change_category",
+            "content_type": 24,
+            "name": "Can change Category"
+        },
+        "model": "auth.permission",
+        "pk": 72
+    },
+    {
+        "fields": {
+            "codename": "delete_category",
+            "content_type": 24,
+            "name": "Can delete Category"
+        },
+        "model": "auth.permission",
+        "pk": 73
+    },
+    {
+        "fields": {
+            "codename": "add_question",
+            "content_type": 25,
+            "name": "Can add Question"
+        },
+        "model": "auth.permission",
+        "pk": 74
+    },
+    {
+        "fields": {
+            "codename": "change_question",
+            "content_type": 25,
+            "name": "Can change Question"
+        },
+        "model": "auth.permission",
+        "pk": 75
+    },
+    {
+        "fields": {
+            "codename": "delete_question",
+            "content_type": 25,
+            "name": "Can delete Question"
+        },
+        "model": "auth.permission",
+        "pk": 76
+    },
+    {
+        "fields": {
+            "codename": "add_response",
+            "content_type": 26,
+            "name": "Can add Response"
+        },
+        "model": "auth.permission",
+        "pk": 77
+    },
+    {
+        "fields": {
+            "codename": "change_response",
+            "content_type": 26,
+            "name": "Can change Response"
+        },
+        "model": "auth.permission",
+        "pk": 78
+    },
+    {
+        "fields": {
+            "codename": "delete_response",
+            "content_type": 26,
+            "name": "Can delete Response"
+        },
+        "model": "auth.permission",
+        "pk": 79
+    },
+    {
+        "fields": {
+            "date_joined": "2014-05-24T17:27:00Z",
+            "email": "schwager@hsph.harvard.edu",
+            "first_name": "Randall",
+            "groups": [],
+            "is_active": true,
+            "is_staff": true,
+            "is_superuser": true,
+            "last_login": "2014-05-30T19:11:36Z",
+            "last_name": "Schwager",
+            "password": "pbkdf2_sha256$12000$ZzV31OLDfuDk$HwwCzdjzY8+wOVQTBPxohZLHDo7asuheZKbOzogX0bM=",
+            "user_permissions": [],
+            "username": "rschwager"
+        },
+        "model": "auth.user",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "date_joined": "2014-05-30T19:13:23Z",
+            "email": "",
+            "first_name": "Keith",
+            "groups": [],
+            "is_active": true,
+            "is_staff": true,
+            "is_superuser": false,
+            "last_login": "2014-05-30T19:13:23Z",
+            "last_name": "Bayer",
+            "password": "!YwWMnIN6nXPiVY60YSaWESshc20oVZSkXIRUX6Dm",
+            "user_permissions": [],
+            "username": "kbayer"
+        },
+        "model": "auth.user",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "sites": [
+                1
+            ],
+            "user": 2
+        },
+        "model": "core.sitepermission",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-05-24T21:28:12Z",
+            "change_message": "",
+            "content_type": 19,
+            "object_id": "1",
+            "object_repr": "Tools",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-05-24T21:29:49Z",
+            "change_message": "",
+            "content_type": 20,
+            "object_id": "2",
+            "object_repr": "Tools / Metadata Generator",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-05-24T21:30:23Z",
+            "change_message": "",
+            "content_type": 20,
+            "object_id": "3",
+            "object_repr": "Tools / Sample-level Metadata Editor",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-05-24T21:30:42Z",
+            "change_message": "",
+            "content_type": 20,
+            "object_id": "4",
+            "object_repr": "Tools / Metatadata Validator",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2014-05-24T21:31:25Z",
+            "change_message": "Changed content and keywords.",
+            "content_type": 19,
+            "object_id": "1",
+            "object_repr": "Tools",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-05-28T17:33:04Z",
+            "change_message": "",
+            "content_type": 20,
+            "object_id": "5",
+            "object_repr": "Tools / Support Tickets",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-05-28T17:33:23Z",
+            "change_message": "",
+            "content_type": 20,
+            "object_id": "6",
+            "object_repr": "Tools / Files",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-05-28T17:54:37Z",
+            "change_message": "",
+            "content_type": 24,
+            "object_id": "1",
+            "object_repr": "Site improvements",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-05-28T17:54:56Z",
+            "change_message": "",
+            "content_type": 24,
+            "object_id": "2",
+            "object_repr": "Workflow suggestions",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-05-28T17:55:02Z",
+            "change_message": "",
+            "content_type": 24,
+            "object_id": "3",
+            "object_repr": "Special analyses",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "action_flag": 3,
+            "action_time": "2014-05-30T13:01:57Z",
+            "change_message": "",
+            "content_type": 18,
+            "object_id": "5",
+            "object_repr": "Tools / Support Tickets",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2014-05-30T13:02:27Z",
+            "change_message": "Changed content and keywords.",
+            "content_type": 19,
+            "object_id": "1",
+            "object_repr": "Tools",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-05-30T13:03:02Z",
+            "change_message": "",
+            "content_type": 20,
+            "object_id": "7",
+            "object_repr": "Support Tickets",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2014-05-30T14:48:54Z",
+            "change_message": "",
+            "content_type": 19,
+            "object_id": "8",
+            "object_repr": "Documents",
+            "user": 1
+        },
+        "model": "admin.logentry",
+        "pk": 14
+    }
+]

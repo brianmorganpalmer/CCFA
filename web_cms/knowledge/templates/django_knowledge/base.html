@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ STATIC_URL }}knowledge/css/main.css">
+{% endblock extra_css %}
+
+{% block meta_title %}{% trans "Tickets" %}{% endblock %}
+{% block title %}{% trans "MIBC - Tickets" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li>{% trans "Microbiome Bioinformatics Center" %}</li>
+<li class="active"> {% trans "Tickets" %} </li>
+{% endblock %}
+
+{% block left_panel %}{% endblock  %}
+
+{% block main_outer %}
+<div class="col-md-9 middle">
+  {% block main %}
+  <div class="wrapper">
+    {% block knowledge_inner %}
+    {% endblock knowledge_inner %}
+  </div>
+  {% endblock main %}
+</div>
+{% endblock main_outer %}
+
+

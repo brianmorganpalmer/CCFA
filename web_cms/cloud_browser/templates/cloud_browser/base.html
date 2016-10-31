@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% comment %}
+###############################################################################
+# Browser Base
+#
+# Note: Override this base template to integrate rest of templates to site
+# look and feel.
+###############################################################################
+{% endcomment %}
+
+{% block meta_title %}{% block title %}{% endblock %}{% endblock %}
+{% block cloud_browser_template_head %}{% endblock %}
+{% block extra_css %} 
+<style>  
+  #cloud-browser-objects-table td {
+    padding: 1px 5px;
+  }
+</style>
+{% endblock %}
+
+{% block left_panel %}
+{% endblock %}
+
+{% block breadcrumb_menu %}
+<div id="cloud-browser-breadcrumbs" class="cloud-browser-defaults">
+  {% include "cloud_browser/_breadcrumbs.html" %}
+</div>
+{% endblock %}
+
+{% block main %}
+  <div id="cloud-browser-content">
+    {% block cloud_browser_content %}{% endblock %}
+  </div>
+{% endblock %}

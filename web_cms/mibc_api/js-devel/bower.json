@@ -1,0 +1,19 @@
+{
+  "name": "mibc",
+  "version": "0.0.0",
+  "description": "Javascript frontend for MIBC resources",
+  "main": "mibc/html/index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+      "jquery-validation": "1.11.1"
+      , "plupload":        "2.1.2"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

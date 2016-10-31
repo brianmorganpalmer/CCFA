@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+*.db
+.DS_Store
+.fuse_hidden
+.coverage
+local_settings.py

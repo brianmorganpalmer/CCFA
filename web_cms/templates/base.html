@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
+{% load pages_tags mezzanine_tags accounts_tags i18n future staticfiles %}
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
+<meta name="description" content="{% block meta_description %}{% endblock %}">
+<title>{% block meta_title %}{% endblock %}{% block site_meta_title %}
+  {% if settings.SITE_TITLE %} |
+    {{ settings.SITE_TITLE }}
+  {% endif %}
+  {% endblock site_meta_title %}</title>
+<link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
+
+{% compress css %}
+<link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+<link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
+<link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">
+{% if LANGUAGE_BIDI %}
+<link rel="stylesheet" href="{% static "css/rtl.css" %}">
+{% endif %}
+{% block extra_css %}{% endblock %}
+{% endcompress %}
+
+{% compress js %}
+<script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}">
+</script>
+<script src="{% static "js/bootstrap.js" %}"></script>
+<script src="{% static "js/bootstrap-extras.js" %}"></script>
+{% block extra_js %}{% endblock %}
+{% include "includes/footer_scripts.html" %}
+{% endcompress %}
+
+<!--[if lt IE 9]>                                                                              
+<script src="{% static "js/html5shiv.js" %}"></script>                                         
+<script src="{% static "js/respond.min.js" %}"></script>                                       
+<![endif]-->
+
+{% block extra_head %}{% endblock %}
+</head>
+
+<body id="{% block body_id %}body{% endblock %}">
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+	<img style="height: 30px;" src="{% static "img/logo.png" %}" />
+      </a>
+    </div> 
+      <div class="navbar-collapse collapse"> 
+	{% page_menu "pages/menus/dropdown.html" %} 
+      <div class="pull-right">
+	{% if request.user.is_authenticated %}
+	<p class="navbar-text">
+	  {% trans "Logged in as: " %}
+          {% if profile_url %}
+            <a href="{{ profile_url }}">
+	      {{ request.user|username_or:"email" }}
+	    </a> </p>
+	<a href="{% url "profile_update" %}" 
+	   class="btn btn-default navbar-btn btn-sm btn-account">
+          <span class="glyphicon glyphicon-edit"></span> 
+	</a> 
+	  {% else %}
+	<a href="{% url "profile_update" %}">
+	  {{request.user|username_or:"email" }}
+	</a> </p>
+	{% endif %}
+          <a href="{% url "logout" %}?next={{ request.path }}" 
+	     class="btn btn-sm btn-danger btn-account navbar-btn">
+	    <span class="glyphicon glyphicon-log-out"></span> 
+	    {% trans "Log out" %}
+	  </a> 
+	{% else %}
+	  <a href="{% url "login" %}?next={{ request.path }}" 
+	     class="btn btn-default btn-sm btn-account navbar-btn">
+            <span class="glyphicon glyphicon-log-in"></span> 
+	    {% trans "Log in" %}
+	  </a>
+        {% endif %}
+      </div> 
+      </div>
+  </div> 
+</nav> 
+ 
+<div class="container"> 
+ 
+  {% nevercache %} 
+  {% if messages %} 
+  <div class="messages"> 
+    {% for message in messages %} 
+    <div class="alert alert-dismissable alert-{{ message.tags }}" 
+	 data-alert="alert"> 
+      <button type="button" class="close" 
+	      data-dismiss="alert" aria-hidden="true">
+	&times;
+      </button> 
+      {{ message }} 
+    </div> 
+    {% endfor %} 
+  </div> 
+  {% endif %} 
+  {% endnevercache %} 
+ 
+  <h1>{% block title %}{% endblock %}</h1> 
+ 
+  <ul class="breadcrumb"> 
+    {% spaceless %} 
+    {% block breadcrumb_menu %}
+      {% page_menu "pages/menus/breadcrumb.html" %}
+    {% endblock %} 
+    {% endspaceless %} 
+  </ul> 
+ 
+</div> 
+ 
+<div class="container"> 
+  <div class="row"> 
+
+    {% block left_panel_outer %}
+    <div class="col-md-2 left"> 
+      {% block left_panel %} 
+      <div class="panel panel-default tree">
+	{% page_menu "pages/menus/tree.html" %}
+      </div> 
+      {% endblock %} 
+    </div> 
+    {% endblock left_panel_outer %}
+  
+    {% block main_outer %}
+    <div class="col-md-7 middle">
+      {% block main %}{% endblock %}
+    </div>
+    {% endblock main_outer %}
+
+  </div>
+</div>
+
+</body>
+</html>

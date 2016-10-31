@@ -1,0 +1,27 @@
+body {
+    margin:         3% 6%;
+    font-family:    'Amethysta';
+    font-size:      17px;
+    line-height:    1.22;
+    text-rendering: optimizelegibility;
+}
+
+@font-face {
+    font-family: 'Amethysta'; 
+    font-style:  normal; 
+    font-weight: 400; 
+    src:         local(Amethysta),local(Amethysta-Regular),url(https://themes.googleusercontent.com/static/fonts/amethysta/v1/uuO0VFu8kdKx34ju6adj-LO3LdcAZYWl9Si6vvxL-qU.woff) format("woff");
+}
+
+.row {
+    padding: 5px;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox] {
+    margin-bottom: 10px;
+}

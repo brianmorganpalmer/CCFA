@@ -1,0 +1,5 @@
+bowtie2
+usearch
+metaphlan2.py
+zcat
+bzcat

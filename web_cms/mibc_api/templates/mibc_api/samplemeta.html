@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load i18n staticfiles %}
+
+{% block meta_title %}{% trans "map.txt" %}{% endblock %}
+{% block title %}{% trans "Sample-level Metadata Editor" %}{% endblock %}
+
+{% block breadcrumb_menu %}
+<li class="active">{% trans "Sample-level Metadata Editor" %}</li>
+{% endblock %}
+
+{% block extra_css %}
+<link href="{% static "css/mibc.css" %}" rel="stylesheet" type="text/css">
+<style>
+  #load_form input {
+    width: 27%;
+  }
+</style>
+{% endblock %}
+
+{% block left_panel_outer %}{% endblock  %}
+
+{% block main_outer %}
+<div class="col-md-12 middle">
+
+{% block main %}
+    <div class="row" style="margin-left: -5px">
+      <form id="load_form" class="form-inline"> 
+	<input type="text" class="form-control" 
+	       id="load_usr" placeholder="User Name"> 
+	<input type="text" id="load_proj" class="form-control"
+	       placeholder="Project Name">
+	<a id="load_btn" class="btn btn-primary" href="#"
+	   style="color: #ffffff">Load</a>
+	<a id="save_btn" class="btn btn-primary" href="#"
+	   style="color: #ffffff">Save</a>
+	<a id="validate_btn" class="btn btn-primary" href="#"
+	   style="color: #ffffff">Validate</a>
+	<a id="suggest_btn" class="btn btn-primary" href="#"
+	   style="color: #ffffff">Suggest</a>
+	<div id="loading" 
+	     class="glyphicon glyphicon-time hidden">
+	</div>
+	<span id="errmsg" class="label label-danger hidden"></span>
+      </form>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+	Sample Level Metadata
+      </div>
+
+      <table class="table" id="results">
+      </table>
+    </div>
+
+    <script src="{%static "js/samplemeta.js" %}"></script>
+      
+{% endblock %}
+</div>
+{% endblock main_outer %}
